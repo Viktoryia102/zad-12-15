@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Zadanie</title>
+</head>
+<body>
+    <header>
+        <h1>LOGO - Vashkevich</h1>
+        <p>Gdańsk, <span id="date"></span></p>
+    </header>
+    <div class="container">
+        <nav class="menu">
+            <b>Lewe menu</b>
+            <ul>
+                <li>
+                    <a href="https://zse.edu.gdansk.pl/pl" target="_blank">Strona ZSE</a>
+                </li>
+                <li>
+                    <a href="https://www.kuratorium.gda.pl/" target="_blank">Kuratorium</a>
+                </li>
+                <li>
+                    <a href="https://store.steampowered.com/" target="_blank">Platforma Steam</a>
+                </li>
+                <li>
+                    <a href="https://allegro.pl/" target="_blank">Inna Strona</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h2>Vashkevich, 1-P, 22.11.2024</h2>
+            <marquee bgcolor="red">Vashkevich</marquee>
+            <h3>Layout (interfejs strony internetowej) - element konstrukcji graficznej, w którym ustala się:</h3>
+            <ul>
+                <li>1. Rozmieszczenie elementów (treści) na stronie.</li>
+                <li>2. Wygląd (kolorystykę, elementy dekoracyjne, krój czcionki).</li>
+            </ul>
+            <h3>Popularne technologie Layoutu dla stron WWW</h3>
+            <ul>
+                <li>1. w oparciu o tabele (iframe) lub ramy (frame)</li>
+                <li>2. w oparciu o DIV'y</li>
+                <li>3. w oparciu o instrukcje HTML5 (nav, ....)</li>
+            </ul>
+        </main>
+        <aside class="right-menu">
+            <b>Prawe menu</b>
+            <div class="shapes">
+                <a href="tabela_vashkevich.html" class="shape-link">
+                    <div class="circle brown"></div>
+                </a>
+                <a href="formularz_vashkevich.html" class="shape-link">
+                    <div class="rectangle blue"></div>
+                </a>
+                <a href="plik_vashkevich.html" class="shape-link">
+                    <div class="circle yellow"></div>
+                </a>
+                <a href="https://viktoryia102.github.io/dydaktyka/" class="shape-link" target="_blank">
+                    <div class="rectangle green"></div>
+                </a>
+                <a href="mailto:labatonih@gmail.com" class="shape-link">
+                    <div class="circle red"></div>
+                </a>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <p>STOPKA - Vashkevich </p>
+        <p>Gdańsk, 22.11.2024 <span id="footer-date"></span></p>
+    </footer>
+    <script>
+        const date = new Date().toLocaleDateString();
+        document.getElementById("date").textContent = date;
+        document.getElementById("footer-date").textContent = date;
+    </script>
+</body>
+</html>
