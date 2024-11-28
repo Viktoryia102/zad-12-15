@@ -1,147 +1,56 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona Zadanie</title>
-     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #f2f2f2;
-            text-align: center;
-            padding: 10px;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 3fr 1fr;
-            gap: 10px;
-            margin: 10px;
-        }
-        .menu {
-            background-color: #e6e6e6;
-            padding: 10px;
-        }
-        .content {
-            background-color: #fff;
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
-        .menu a {
-            display: block;
-            margin: 5px 0;
-            text-decoration: none;
-        }
-        .right-menu {
-            background-color: #f9f9f9;
-            padding: 10px;
-        }
-        .shapes {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-        .shape-link {
-            text-decoration: none;
-        }
-        .circle {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-        .circle.brown {
-            background-color: brown;
-        }
-        .circle.yellow {
-            background-color: yellow;
-        }
-        .circle.red {
-            background-color: red;
-        }
-        .rectangle {
-            width: 50px;
-            height: 25px;
-            display: inline-block;
-        }
-        .rectangle.blue {
-            background-color: blue;
-        }
-        .rectangle.green {
-            background-color: green;
-        }
-    </style>
-</head>
+<html>
+ <head>
+ <meta charset="utf-8">
+ </head>
 <body>
-    <header>
-        <h1>LOGO - Vashkevich</h1>
-        <p>Gdańsk, <span id="date"></span></p>
-    </header>
-    <div class="container">
-        <nav class="menu">
-            <b>Lewe menu</b>
-            <ul>
-                <li>
-                    <a href="https://zse.edu.gdansk.pl/pl" target="_blank">Strona ZSE</a>
-                </li>
-                <li>
-                    <a href="https://www.kuratorium.gda.pl/" target="_blank">Kuratorium</a>
-                </li>
-                <li>
-                    <a href="https://store.steampowered.com/" target="_blank">Platforma Steam</a>
-                </li>
-                <li>
-                    <a href="https://allegro.pl/" target="_blank">Inna Strona</a>
-                </li>
-            </ul>
-        </nav>
-        <main class="content">
-            <h2>Vashkevich, 1-P, 22.11.2024</h2>
-            <marquee bgcolor="red">Vashkevich</marquee>
-            <h3>Layout (interfejs strony internetowej) - element konstrukcji graficznej, w którym ustala się:</h3>
-            <ul>
-                <li>1. Rozmieszczenie elementów (treści) na stronie.</li>
-                <li>2. Wygląd (kolorystykę, elementy dekoracyjne, krój czcionki).</li>
-            </ul>
-            <h3>Popularne technologie Layoutu dla stron WWW</h3>
-            <ul>
-                <li>1. w oparciu o tabele (iframe) lub ramy (frame)</li>
-                <li>2. w oparciu o DIV'y</li>
-                <li>3. w oparciu o instrukcje HTML5 (nav, ....)</li>
-            </ul>
-        </main>
-        <aside class="right-menu">
-            <b>Prawe menu</b>
-            <div class="shapes">
-                <a href="tabela_vashkevich.html" class="shape-link">
-                    <div class="circle brown"></div>
-                </a>
-                <a href="formularz_vashkevich.html" class="shape-link">
-                    <div class="rectangle blue"></div>
-                </a>
-                <a href="plik_vashkevich.html" class="shape-link">
-                    <div class="circle yellow"></div>
-                </a>
-                <a href="https://viktoryia102.github.io/dydaktyka/" class="shape-link" target="_blank">
-                    <div class="rectangle green"></div>
-                </a>
-                <a href="mailto:labatonih@gmail.com" class="shape-link">
-                    <div class="circle red"></div>
-                </a>
-            </div>
-        </aside>
-    </div>
-    <footer>
-        <p>STOPKA - Vashkevich </p>
-        <p>Gdańsk, 22.11.2024 <span id="footer-date"></span></p>
-    </footer>
-    <script>
-        const date = new Date().toLocaleDateString();
-        document.getElementById("date").textContent = date;
-        document.getElementById("footer-date").textContent = date;
-    </script>
+<img src="logo_zadanie_15_vashkevich.png" border=1 align=left>
+ <table width=65% border="1" align="center">
+ <tr>
+ <td colspan="3">
+<iframe scrolling="no" width=977 height=100 name="obszar_logo" src="logo_vashkevich.html" border="0"></iframe>
+ </td>
+ </tr>
+ <tr>
+ <td width=18% align="center">
+ <b>lewe menu</b>
+ <ul>
+ <li>
+ <a href="https://zse.edu.gdansk.pl/" target="obszar_glowny">Strona ZSE</a>
+ </li>
+ <li>
+  <a href="https://www.kuratorium.gda.pl/" target="obszar_glowny">Kuratorium</a>
+ </li>
+  <li>
+  <a href="https://www.facebook.com/" target="obszar_glowny">Facebook</a>
+ </li>
+   <li>
+  <a href="https://allegro.pl/" target="obszar_glowny">Allegro</a>
+ </li>
+ </ul>
+ </td>
+
+ </td>
+ <td align=center>
+<iframe width=650 height=420 name="obszar_glowny" src="glowny_vashkevich.html" border="0"></iframe>
+ </td>
+ <td width=18% align="center">
+ <b>prawe menu</b>
+<map id="mapa_vashkevich">
+
+ <area shape="rect" coords="9,8,89,40" href="plik_vashkevich.zip">
+ <area shape="rect" coords="22,49,80,106" href="tabela_vashkevich.html" target="obszar_glowny">
+ <area shape="rect" coords="21,123,77,172" href="formularz_vashkevich.html" target="obszar_glowny">
+ <area shape="rect" coords="18,181,80,233" href="mailto:mkryniew@ids.gda.pl">
+ <area shape="rect" coords="13,241,82,298" href="z1_z6_vashkevich.html" target="obszar_glowny">
+</map>
+ <img src="mapa.GIF" alt="tutaj wybieraj linki" usemap="#mapa_vashkevich">
+ </td>
+ </tr>
+ <tr>
+ <td colspan="3">
+<iframe scrolling="no" width=977 height=90 name="obszar_stopka" src="stopka_vashkevich.html" border="0"></iframe>
+ </td>
+ </tr>
+ </table>
 </body>
 </html>
